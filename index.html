@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        /* Define the animation */
+        .slideInLeft {
+            animation: slideInLeft 1s ease;
+        }
+
+        /* Define the keyframes for the animation */
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <head>
+
+    </head>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="EduCare.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="animated-text">Home</a></li>
+                    <li><a href="#about" class="animated-text">About</a></li>
+                    <li><a href="#services" class="animated-text">Services</a></li>
+                    <li><a href="#portfolio" class="animated-text">Materials</a></li>
+                    <li><a href="#contact" class="animated-text">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 class="header-line">
+                    Spread Light of Education<br>
+                    Education is the movement <br>
+                    from darkness to light.<br>
+                    <span id="element"></span>
+                    <div id="cursor"></div>
+                </h1>
+            </div>
+
+        </div>
+    </div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="R (1).jpg" alt="Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title animated-text">Our Educational Services</h1>
+                <p class="animated-text">We are committed to providing high-quality education to students of all ages and backgrounds. Our educational services aim to empower learners, foster intellectual growth, and inspire lifelong learning. With a dedicated team of educators and innovative teaching methodologies, we strive to create a dynamic learning environment that nurtures curiosity, critical thinking, and creativity.</p>
+                <p class="animated-text">Our educational programs encompass a wide range of subjects, including mathematics, science, literature, history, and more. Whether you are preparing for exams, exploring new interests, or seeking professional development opportunities, our comprehensive curriculum and personalized approach ensure that every student receives the support and resources they need to achieve academic success.</p>
+                <p class="animated-text">At our educational center, we believe that learning should be engaging, interactive, and inclusive. Through hands-on activities, collaborative projects, and experiential learning experiences, we empower students to explore their passions, develop essential skills, and become lifelong learners who are equipped to thrive in a rapidly changing world.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title animated-text">Our Educational Services</h1>
+        <div class="services-list animated-text">
+            <div>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2 class="animated-text">Online Courses</h2>
+                <p class="animated-text">Explore our diverse range of online courses covering various subjects and levels. Learn at your own pace with interactive content and expert guidance.</p>
+                <a href="#" class="animated-text">Discover Courses</a>
+            </div>
+            <div>
+                <i class="fas fa-book-open"></i>
+                <h2 class="animated-text">Study Materials</h2>
+                <p class="animated-text">Access comprehensive study materials including textbooks, lecture notes, and practice exercises tailored to enhance your learning experience.</p>
+                <a href="#" class="animated-text">Explore Materials</a>
+            </div>
+            <div>
+                <i class="fas fa-users"></i>
+                <h2 class="animated-text">Tutoring Services</h2>
+                <p class="animated-text">Get personalized tutoring sessions from experienced educators to clarify doubts, reinforce concepts, and excel in your academic pursuits.</p>
+                <a href="#" class="animated-text">Get Tutoring</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------materials and notes------------- -->
+<div id="materials">
+    <div class="container">
+        <h1 class="sub-title animated-text">Materials and Notes</h1>
+        <div class="buttons">
+            <a href="#" class="btn animated-text">Download Materials</a>
+            <a href="#" class="btn btn-secondary animated-text">Upload Materials</a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left animated-text">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fas fa-paper-plane"></i>Educare@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 100023156</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="ourterms" download class="btn btn2 animated-text">Download T&Cs.</a>
+                </div>
+                <div class="contact-right animated-text">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required class="animated-text">
+                        <input type="email" name="Email" placeholder="Your Email" required class="animated-text">
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="animated-text"></textarea>
+                        <button type="submit" class="btn btn2 animated-text">Submit</button>
+                    </form>
+                    <span id="msg" class="animated-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add animations using JavaScript
+        const animatedElements = document.querySelectorAll('.animated-text');
+
+        // Function to add animation class to elements sequentially
+        function addAnimation() {
+            let delay = 0;
+            animatedElements.forEach(element => {
+                element.style.animationDelay = delay + 's';
+                element.classList.add('slideInLeft');
+                delay += 0.3; // Adjust the delay between each word
+            });
+        }
+
+        // Call the function after the page has loaded
+        window.onload = addAnimation;
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiVQYIVuIQ3S5mvavSw32nZ3BTmxoLIiXviKEWt42qfCz78e0AYS_-WSo7buezO1FXAA/exec' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Told', 'by', 'Allen Bloom'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
